@@ -1,35 +1,49 @@
 # vue-progress-bar-loader
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Installation
 
 ```sh
-npm install
+npm i vue-progress-bar-loader
 ```
 
-### Compile and Hot-Reload for Development
+## Usage
+Wrap the ProgressBar component around your loading content within your Vue component's DOM.
 
-```sh
-npm run dev
-```
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+import TheWelcome from './components/TheWelcome.vue'
+import ProgressBar from '../node_modules/vue-progress-bar-loader/src/components/progress-bar.vue'
+</script>
 
-### Compile and Minify for Production
+<template>
+  <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  </header>
 
-```sh
-npm run build
-```
+  <main>
+    <TheWelcome />
+    <progress-bar />
+  </main>
+</template>
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+## Options
+You can pass available props according to your choice modification.
+    props: {
+        height: {
+            type: String,
+        },
+        width: {
+            type: String,
+        },
+        backgroundColor: {
+            type: String,
+        },
+        borderRadius: {
+            type: String,
+        },
+        loading: {
+            type: Boolean,
+        },
+    },
+    
+  ## NITESH SINGH
