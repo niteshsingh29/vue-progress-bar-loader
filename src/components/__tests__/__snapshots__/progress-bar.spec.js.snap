@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`Progress bar loader > renders properly 1`] = `
+<div
+  class="outer"
+  style="background-color: rgb(204, 204, 204); border-radius: [object Object];"
+>
+  <div
+    class="inner"
+    id="inner"
+    style="width: 100%; border-radius: [object Object]; animation: progress 5000ms ease-in 1;"
+  />
+</div>
+`;
