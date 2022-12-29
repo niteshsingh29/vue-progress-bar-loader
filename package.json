@@ -1,9 +1,12 @@
 {
   "name": "vue-progress-bar-loader",
   "version": "0.0.0",
-  "author": {
-    "name": "Nitesh Singh",
-    "github": "niteshsingh29"
+  "author": "Nitesh Singh",
+  "license": "ISC",
+  "keywords": ["nitesh-vue-progress-bar-loader", "nitesh-vue-progress-bar", "vue-progress-bar"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niteshsingh29/vue-progress-bar-loader.git"
   },
   "scripts": {
     "dev": "vite",
