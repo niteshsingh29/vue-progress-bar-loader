@@ -1,7 +1,7 @@
 <template>
-    <div class="progress">
+    <div class="progress" v-if="loading">
         <h1 class="lineUp" :style="messageStyle">{{ messages[messageIndex] }}</h1>
-        <div class="outer" :style="outer" v-show="true">
+        <div class="outer" :style="outer">
             <div class="inner" id="inner" :style="inner" />
         </div>
     </div>
